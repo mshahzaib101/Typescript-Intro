@@ -1,0 +1,122 @@
+
+docs:
+
+*   every declared variable should have its type
+*   it is similar to javascript
+
+*   Basic Types
+
+    boolean
+    let isDone: boolean = false;
+
+    number
+    //for all including decimal
+    let decimal: number = 6;
+    let binary: number = 0b1010; //also for hex numbers
+
+    String
+    let color: string = "blue";
+
+    Array
+    (arraytype[ ])
+    let list: number[] = [1, 2, 3];
+
+    Tuple
+    allow you to express an array where the type of a fixed number of elements is known
+    multi array
+    // Declare a tuple type
+    let x: [string, number];
+    // Initialize it
+    x = ["hello", 10]; // OK
+    // Initialize it incorrectly
+    x = [10, "hello"]; // Error
+
+    Any
+    let notSure: any = 4;
+    for dynamic data of which type is not known
+
+*   Interfaces term is used for declaring object props type FOR ONLY functions parameter,
+    like this,
+    //
+    interface Person {
+    firstName: string;
+    lastName: string;
+    }
+    //
+    now person becomes one of the TS types
+    it will be used like this:
+    //
+    function name = () => {{ firstName: "Jane", lastName: "User" } : Person}
+    //
+*   note: console.log() are NOT ALLowed in TS
+    use it in 2 ways:
+    1)  // tslint:disable-next-line:no-console
+        console.log('1') 
+    2) You may need to define the 'no-console' option in jsRules,
+       in //tslint.json
+        "rules": {
+        "no-console": false //Disable for typescript
+        },
+        // then restart server
+*   in react, props are passed using interface
+    export interface Props {
+    name: string;
+    enthusiasmLevel?: number;
+    }
+    function Hello({ name, enthusiasmLevel = 1 }: Props) {
+    //
+}
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
